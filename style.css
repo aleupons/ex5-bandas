@@ -18,7 +18,6 @@ p {
 }
 .contenidor-general {
    display: flex;
-   justify-content: space-around;
    min-height: 100vh;
 }
 .contenidor-general div {
@@ -42,6 +41,12 @@ p {
 .contenidor-general div:nth-child(4) {
   background-color: var(--color-4);
 }
-body{
-background: linear-gradient(right, black 50%, white 0%);
+.contenidor-general div {
+  transition: color 3s;
+  transition: background-color 3s ease;
 }
+.contenidor-general div:hover {
+  background-color: black;
+  color: white;
+}
+
