@@ -1,8 +1,17 @@
+:root {
+  --color-inicial: #01ffff;
+  --color-2: #00dddd;
+  --color-3: #00bbbb;
+  --color-4: #009999;
+  --color-final: #007777;
+}
 * {
   box-sizing: border-box;
 }
 body {
   margin: 0;
+  font-family: sans-serif;
+  font-size: 12px;
 }
 p {
   margin: 0;
@@ -15,4 +24,24 @@ p {
 .contenidor-general div {
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.contenidor-general div:first-child {
+  background-color: var(--color-inicial);
+}
+.contenidor-general div:last-child {
+  background-color: var(--color-final);
+}
+.contenidor-general div:nth-child(2) {
+  background-color: var(--color-2);
+}
+.contenidor-general div:nth-child(3) {
+  background-color: var(--color-3);
+}
+.contenidor-general div:nth-child(4) {
+  background-color: var(--color-4);
+}
+body{
+background: linear-gradient(right, black 50%, white 0%);
 }
