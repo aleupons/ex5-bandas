@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+.contenidor-general {
+   display: flex;
+   justify-content: space-around;
+   min-height: 100vh;
+}
+.contenidor-general div {
+  display: flex;
+  align-items: center;
+}
